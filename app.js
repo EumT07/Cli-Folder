@@ -9,7 +9,7 @@ let interF = readline.createInterface(process.stdin, process.stdout);
 //Tools Folders
 const toolsFolder = `
 ==============================CMD===================================
-:me = Menu | :chf = Choose Folder | :cf = Creat a File 
+:me = Menu | :chf = Choose Folder | :cf = Create a File 
 :ed = Edit Folder | :exit = Close App
 ===================================================================\n`
 //Tools Files
@@ -183,7 +183,7 @@ function editFolder() {
                             =====================
             `);
             viewFolders();
-            interF.question("This folder Doesn't Exits\nWould you like to creat it..? (yes = y / No = n) \n>", data => {
+            interF.question("This folder Doesn't Exits\nWould you like to create it..? (yes = y / No = n) \n>", data => {
                 if(data == "y"){
                     createNewFolder();
                 }else{
@@ -363,7 +363,7 @@ function chooseFolder(){
                             =====================
             `)
             viewFolders();
-            interF.question("This folder Doesn't Exits\nWould you like to creat it..? (yes = y / No = n) \n>", data => {
+            interF.question("This folder Doesn't Exits\nWould you like to create it..? (yes = y / No = n) \n>", data => {
                 if(data == ":me"){
                     menuScreen();
                 }else if(data == ":exit"){
